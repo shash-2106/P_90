@@ -21,7 +21,7 @@ export default class SignupLoginScreen extends React.Component{
         }
     }
    logIn=(username,password)=>{
-        firebase.auth().signInWithEmailAndPassword(username,password).then(this.props.navigation.navigate('AskScreen')).catch((error)=>{
+        firebase.auth().signInWithEmailAndPassword(username,password).then(alert("login successful")).catch((error)=>{
             return alert(error.message);
         });
     }
@@ -129,7 +129,7 @@ export default class SignupLoginScreen extends React.Component{
             alignContent:'center',
             justifyContent:'center',
             padding:-5,
-            borderRadius:30,
+           
             margin:10,
             alignSelf:'center'
         },

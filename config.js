@@ -9,5 +9,5 @@ var firebaseConfig = {
     appId: "1:463711109029:web:9f1a4718d5a57768c5f24c"
   };
   // Initialize Firebase
-  if (!firebase.apps.length) { firebase.initializeApp(firebaseConfig); }// if already initialized, use that one }
+firebase.initializeApp(firebaseConfig); // if already initialized, use that one }
   export default firebase.firestore()
